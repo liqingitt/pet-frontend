@@ -1,7 +1,24 @@
 export default defineAppConfig({
   pages: [
-    'pages/index/index'
+    // tabBar pages
+    'pages/user/index',
+    "pages/home/index",
+
+    // pages
   ],
+  tabBar:{
+    list:[
+      {
+        pagePath:"pages/home/index",
+        text:"首页",
+      },
+      {
+        pagePath:"pages/user/index",
+        text:"我的",
+      },
+   
+    ]
+  },
   window: {
     backgroundTextStyle: 'light',
     navigationBarBackgroundColor: '#fff',
