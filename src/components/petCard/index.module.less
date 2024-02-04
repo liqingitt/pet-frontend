@@ -1,0 +1,35 @@
+.pet-card-c{
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    .image-box{
+        width: 150px;
+        height: 150px;
+        margin-right: 10px;
+        flex: 0 0 auto;
+        border-radius: 10px;
+    }
+
+    .info{
+        flex: 1;
+        min-width: 0;
+        height: 100%;
+      
+        .pet-name{
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .desc{
+            margin: 10px 0;
+            // height: 45px;
+
+            width: 100%;
+            overflow : hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+       
+    }
+}

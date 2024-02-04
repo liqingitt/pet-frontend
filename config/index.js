@@ -14,7 +14,7 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
-  plugins: ['@tarojs/plugin-html'],
+  plugins: ['@tarojs/plugin-html','@tarojs/plugin-http'],
   defineConstants: {
   },
   copy: {
@@ -29,6 +29,9 @@ const config = {
     prebundle: { enable: false }
   },
   mini: {
+    miniCssExtractPluginOption: {
+      ignoreOrder: true,
+    },
     postcss: {
       pxtransform: {
         enable: true,
