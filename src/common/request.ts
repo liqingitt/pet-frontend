@@ -48,17 +48,17 @@ const getCode = (): Promise<string> => {
 export const loginRequest = async () => {
 
     const code = await getCode();
-    const { data } = await axiosInstance.post("/wx/login", {}, {
+    const data = await axiosInstance.post("/wx/login", {}, {
         params: {
             code
         }
     })
 
-    if (data.status !== 1) {
-        throw new Error(data)
-    }
+    // if (data.status !== 1) {
+    //     throw new Error(data)
+    // }
 
-    return data.data
+    return data
 
 }
 
